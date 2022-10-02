@@ -1,0 +1,118 @@
+/* imported fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+/* Selects the root element of the document:
+   <html> in the case of HTML */
+:root {
+  --primary-color: #55B690;
+  --secondary-color: #3C3B44;
+}
+/*  border-box tells the browser to account for any border and padding in the values you specify for an element's width and height.*/
+* {
+  box-sizing: border-box;
+}
+/* The <body> HTML element represents the content of an HTML document. There can be only one <body> element in a document. */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+/* Positioning the logo in the header */
+.logo-img {
+  position: absolute;
+  left: 25px; top: 10;
+}
+/* Styling for the header */
+header {
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--secondary-color);
+}
+/* Styling for the search bars */
+.search {
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  border-radius: 50px;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
+}
+/* Color for out "search" placeholder */
+.search::placeholder {
+  color: #e07b39;
+}
+/* The :focus CSS pseudo-class represents an element (such as a form input) that has received focus. It is generally triggered when the user clicks or taps on an element or selects it with the keyboard's Tab key. */
+.search:focus {
+  outline: none;
+  background-color: var(--primary-color);
+}
+/* main page content */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* styling for each movie card */
+.movie {
+  width: 300px;
+  margin: 1rem;
+  background-color: var(--secondary-color);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+}
+/* movie img */
+.movie img {
+  width: 100%;
+}
+/* movie info */
+.movie-info {
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap:0.2rem;
+  padding: 0.5rem 1rem 1rem;
+  letter-spacing: 0.5px;
+}
+/* The h3 for movie info */
+.movie-info h3 {
+  margin-top: 0;
+}
+/* The <span> HTML element is a generic inline container for phrasing content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the class or id attributes), or because they share attribute values, such as lang. It should be used only when no other semantic element is appropriate. <span> is very much like a <div> element, but <div> is a block-level element whereas a <span> is an inline element. */
+.movie-info span {
+  background-color: var(--primary-color);
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-weight: bold;
+}
+/* If movie gets a rating of 8 or more it turns lightgreen */ 
+.movie-info span.green {
+  color: lightgreen;
+}
+/* If movie gets a rating between 5.1 & 7.9 it turns orange */ 
+.movie-info span.orange {
+  color: orange;
+}
+/* If movie gets a rating of 5 or less it turns red */ 
+.movie-info span.red {
+  color: red;
+}
+/* Styling for the info bar that pops up when you hover over a movie */
+.overview {
+  background-color: #fff;
+  padding: 2rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-height: 100%;
+  transform: translateY(101%);
+  overflow-y: auto;
+  transition: transform 0.3s ease-in;
+}
+/* Hovering for the overview bars */
+.movie:hover .overview {
+  transform: translateY(0);
+}
