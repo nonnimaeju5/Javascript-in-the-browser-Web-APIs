@@ -1,11 +1,22 @@
-# Javascript-in-the-browser-Web-APIs
+# Javascript-in-the-browser-Web-APIs (Speciality Guide)
+This is a project done for Vefskólinn course. For the speciality guide i chose coding a movie app.
+
+## Movie app functionality
+I decided to do a movie based app and it is a single-page web application. 
+I am going to add too it later on as i want to make it as a app that members of the Skjaldborgarbíó can use.
 
 
-Speciality Guide:
-I decided to do a movie based app and used a tutorial on youtube from Asish George (link below).
-I did a much more simplyfied version and decided on having the ability to search movies, seeing their rating,
-along getting and overview text about each movie when you hover over it.
+## The Movie App allows users to do the following:
+1. You can search all movies from the database that you want to know more about.
+2. See rating that each movie got. 
+3. Overview text that tells you about each movie when you hover over it.
 
-I feel like a learned alot from this project and had fun using these APIs to get the information needed for my site to work. 
+## Later on i want to add some of those functions:
+View popular, now playing, upcoming and top rated movies.
+View Individual movies and get the movie data such as cast, movie duration, summary, recommended movies,etc.
+View popular People.
+View Individual Persons and get thier details.
+Search for Actors.
 
-Link: [https://www.youtube.com/watch?v=9Bvt6BFf6_U&list=PLX7mEGqtfnSqGdETTWURHZFWaRySSFJIz&index=19&t=1254s]
+
+
