@@ -15,7 +15,7 @@ async function getMovies(url) {   // async function that will be called when the
 //  Event Listeners for the overview page loading events
     showMovies(data.results) 
 }
- 
+// Event Listeners for the overview page loading events for the overview pages are loaded.
 function showMovies(movies) {  
     main.innerHTML = ''  
 // foreach the movies in the results array we display them in the screen reader window and the overview pages are loaded.

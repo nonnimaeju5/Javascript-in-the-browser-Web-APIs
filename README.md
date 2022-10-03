@@ -15,5 +15,8 @@ I am going to add too it later on as i want to make it as a app that members of 
 View popular, now playing, upcoming and top rated movies.
 View Individual movies and get the movie data such as cast, movie duration, summary, recommended movies,etc.
 View popular People.
-View Individual Persons and get their details.
+View Individual Persons and get thier details.
 Search for Actors.
+
+
+
